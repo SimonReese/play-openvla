@@ -1,0 +1,7 @@
+name: openvla
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+prefix: /home/peraro/miniconda3/envs/openvla
