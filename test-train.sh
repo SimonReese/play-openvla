@@ -4,6 +4,8 @@ CHECKPOINT_PATH="/home/peraro/source/play-openvla/checkpoints/openvla-7b-prismat
 DATASET_ROOT="/home/peraro/source/play-rlds/datasets/rlds/rl_bench_builder"
 LOG_DIR="/home/peraro/source/play-openvla/logs"
 
+export WANDB_MODE=disabled
+
 torchrun --standalone --nnodes 1 --nproc-per-node 1 openvla/vla-scripts/train.py \
   --pretrained_checkpoint $CHECKPOINT_PATH \
   --vla.type prism-dinosiglip-224px+mx-bridge \
